@@ -50,6 +50,26 @@ body {
   display: flex;
   align-items: center;
 }
+.button_basket {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  position: relative;
+  margin-top: 12px;
+}
+
+.basket__text{
+  position: absolute;
+  bottom: 20px;
+  background-color: @brand-color;
+  left: 24px;
+  padding: 2px 8px 4px 8px;
+  border-radius: 43px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
 .button {
   border: solid 1px #e6e6e6;
   background-color: #f16d7f;
@@ -57,7 +77,7 @@ body {
   line-height: 40px;
   padding: 0 15px;
   text-decoration: none;
-  margin-left: 13px;
+  margin-left: 20px;
   color: white;
 }
 .form__browse {
@@ -102,7 +122,7 @@ body {
   padding-top: 19px;
 }
 .menu_link:hover {
-color: @brand-color;
+  color: @brand-color;
 }
 
 .promo {
@@ -478,7 +498,7 @@ color: @brand-color;
 }
 
 .reviews {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -516,7 +536,7 @@ color: @brand-color;
 }
 
 .reviews_conteyner {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
