@@ -46,8 +46,7 @@ body {
   margin-bottom: 10px;
 }
 .menu-li{
-
-  padding: 15px;
+  position: relative;
 }
 .menu-li:hover .drop {
   display: flex;
@@ -79,6 +78,7 @@ body {
 }
 .drop{
   position: absolute;
+  left:-100px;
   top: 50px;
   border-radius: 5px;
   background-color: #fff;
@@ -89,19 +89,25 @@ body {
   z-index: 1;
 }
 .drop_left {
-  left: 312px;
+  left: -580px;
 }
 .drop_left:before{
   left: auto !important;
   right: 80px;
 }
 .drop_accessory{
-  left: 310px;
+  left: -350px;
 }
 .drop_accessory:before{
   left: 401px !important;
 }
+.drop_kids{
+  left: -300px;
+}
+.drop_kids:before{
+  left: 326px !important;
 
+}
 .drop:before{
   content: '';
   display: block;
@@ -110,11 +116,16 @@ body {
   background-color: #fff;
   position: absolute;
   top: -8px;
-  left: 30px;
+  left: 125px;
   transform: rotate(45deg);
   border-top: solid 1px #e8e8e8;
   border-left: solid 1px #e8e8e8;
 
+}
+.menu_li_active {
+  color : @brand-color !important;
+  border-bottom: solid 2px  @brand-color;
+  box-sizing: border-box;line-height: 12px;
 }
 .drop__flex{
   margin-right: 46px;
@@ -159,7 +170,7 @@ body {
 }
 .drop_features {
   left: auto !important;
-  right: 329px;
+  right: -170px;
 }
 .drop_features:before{
   left: 513px;
@@ -191,11 +202,12 @@ body {
   padding-right: 13px;
 }
 .menu-ul {
-  position: relative;
   list-style-type: none;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 .container-center {
   width: 1140px;
@@ -387,6 +399,8 @@ body {
   line-height: 1.86;
   text-decoration: none;
   color: #222;
+  display: inline-block;
+  padding: 15px;
 }
 
 .product1 {
