@@ -45,7 +45,14 @@ body {
 .logo img {
   margin-bottom: 10px;
 }
+.menu-li{
 
+  padding: 15px;
+}
+.menu-li:hover .drop {
+  display: flex;
+  transition: 1s;
+}
 .header_rigth {
   display: flex;
   align-items: center;
@@ -64,11 +71,81 @@ body {
   bottom: 20px;
   background-color: @brand-color;
   left: 24px;
-  padding: 2px 8px 4px 8px;
+  padding: 2px 7px 3px 7px;
   border-radius: 43px;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
+}
+.drop{
+  position: absolute;
+  top: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #0000002b;
+  border: solid 1px #ececec;
+  display: none;
+  z-index: 1;
+}
+.drop_left {
+  left: 312px;
+}
+.drop_left:before{
+  left: auto !important;
+  right: 80px;
+}
+.drop_accessory{
+  left: 310px;
+}
+.drop_accessory:before{
+  left: 401px !important;
+}
+
+.drop:before{
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  position: absolute;
+  top: -8px;
+  left: 30px;
+  transform: rotate(45deg);
+  border-top: solid 1px #e8e8e8;
+  border-left: solid 1px #e8e8e8;
+
+}
+.drop__flex{
+  margin-right: 46px;
+}
+.drop__flex:last-of-type{
+  margin-right: 0;
+}
+.drop__h3{
+  font-size: 14px;
+  line-height: 2.29;
+  letter-spacing: 0.35px;
+  color: #232323;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 8px 0;
+}
+.drop__link{
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.35px;
+  color: #646464;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.drop__link:hover{
+  color: @brand-color;
+}
+
+.drop__menu{
+  list-style: none;
+  padding-right: 100px;
+
 }
 .button {
   border: solid 1px #e6e6e6;
@@ -79,6 +156,13 @@ body {
   text-decoration: none;
   margin-left: 20px;
   color: white;
+}
+.drop_features {
+  left: auto !important;
+  right: 329px;
+}
+.drop_features:before{
+  left: 513px;
 }
 .form__browse {
 
@@ -107,6 +191,7 @@ body {
   padding-right: 13px;
 }
 .menu-ul {
+  position: relative;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -118,8 +203,7 @@ body {
 }
 
 .menu {
-  height: 51px;
-  padding-top: 19px;
+  min-height: 51px;
 }
 .menu_link:hover {
   color: @brand-color;
@@ -135,8 +219,11 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   height: 613px;
-  position: relative;
-  background-image: url(img/promo.jpg);
+  //background-image: url(img/promo.jpg);
+}
+.promo__image{
+  height: 100%;
+  float: left;
 }
 
 
@@ -298,7 +385,6 @@ body {
   font-size: 14px;
   font-weight: 900;
   line-height: 1.86;
-  padding-right: 20px;
   text-decoration: none;
   color: #222;
 }
