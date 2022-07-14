@@ -66,6 +66,7 @@ body {
 }
 
 .basket__text{
+  display:none;
   position: absolute;
   bottom: 20px;
   background-color: @brand-color;
@@ -730,7 +731,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 123px;
-
 }
 
 .about_company {
@@ -760,16 +760,17 @@ body {
 
 }
 
-.list_style {}
+.link_style:hover {
+color: #222224;
+text-decoration: underline;
+}
 
 .link_style {
   text-decoration: none;
   font-size: 16px;
   font-weight: normal;
-
   line-height: 2.63;
   letter-spacing: 0.4px;
-
   color: #898989;
 }
 

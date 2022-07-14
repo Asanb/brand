@@ -61,6 +61,7 @@ body {
   margin-top: 12px;
 }
 .basket__text {
+  display: none;
   position: absolute;
   bottom: 20px;
   background-color: #f16d7f;
@@ -643,6 +644,10 @@ body {
 }
 .style_ul {
   list-style-type: none;
+}
+.link_style:hover {
+  color: #222224;
+  text-decoration: underline;
 }
 .link_style {
   text-decoration: none;
